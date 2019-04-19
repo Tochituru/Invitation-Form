@@ -1,0 +1,23 @@
+-- Hacer un formulario de invitación a un evento. 
+
+Validarlo en el submit 
+
+Nombre —> no puede estar vacío
+Edad ——> debe ser entre 18 y 120 
+Seleccionar estado civil —> no puede estar vacío 
+Seleccionar nacionalidad (select, desplegado de opciones) —> no puede estar vacío 
+
+
+Una vez enviados los datos, 
+en lugar de enviarse a otra web
+Se imprimen abajo, como una 
+lista de confirmación de asistencia
+
+
+Invitado {indice} 
+Nombre: {nombre}
+Edad: {edad}
+Estado civil {estado civil}
+Nacionalidad {nacionalidad}
+Boton "Eliminar invitado"
+ (Si le hacemos clic, se borra todo)```
