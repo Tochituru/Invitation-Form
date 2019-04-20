@@ -34,10 +34,22 @@
                 ¿Cuál es tu estado civil?
             </div>
             <div class="estado-checkbox">
-                <input type="checkbox" name="estado-civil" id="Soltere" value="Soltere">Soltere
-                <input type="checkbox" name="estado-civil" id="Casade" value="Casade">Casade
-                <input type="checkbox" name="estado-civil" id="Poliamor" value="Poliamor">Poliamor
-                <input type="checkbox" name="estado-civil" id="no-contesta" value="no-contesta">Qué te importa
+                <label class="estado-label">
+                    <input type="checkbox" name="estado-civil" id="Soltere" value="Soltere" />
+                    Soltere
+                </label>
+                <label class="estado-label">
+                    <input type="checkbox" name="estado-civil" id="Casade" value="Casade" />
+                    Casade
+                </label>
+                <label class="estado-label">
+                    <input type="checkbox" name="estado-civil" id="Poliamor" value="Poliamor" />
+                    Poliamor
+                </label>
+                <label class="estado-label">
+                    <input type="checkbox" name="estado-civil" id="no-contesta" value="no-contesta" />
+                    Qué te importa
+                </label>
             </div>
         </div>
         <div class="selector">
@@ -52,7 +64,9 @@
                 <option value="Chilena">Chilena</option>
             </select>
         </div>
-        <button type="submit">¡Part of your world!</button>
+        <div class="boton">
+            <button type="submit">¡Part of your world!</button>
+        </div>
     </form>
     <script src="invitacion-dom.js"></script>
 </body>

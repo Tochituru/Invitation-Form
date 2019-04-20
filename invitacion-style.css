@@ -1,0 +1,81 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: rgba(250, 250, 135, 1);
+    background: -moz-linear-gradient(-45deg, rgba(250, 250, 135, 1) 0%, rgba(194, 0, 91, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(250, 250, 135, 1)), color-stop(100%, rgba(194, 0, 91, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(250, 250, 135, 1) 0%, rgba(194, 0, 91, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(250, 250, 135, 1) 0%, rgba(194, 0, 91, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(250, 250, 135, 1) 0%, rgba(194, 0, 91, 1) 100%);
+    background: linear-gradient(135deg, rgba(250, 250, 135, 1) 0%, rgba(194, 0, 91, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafa87', endColorstr='#c2005b', GradientType=1);
+    font-family: 'Encode Sans Expanded', sans-serif;
+    display: flex;
+    flex-direction: column
+}
+
+h1 {
+    font-size: 50pt;
+    align-self: center;
+}
+
+form {
+    align-self: center;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.name, .age, .estado-civil, .selector {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-heading, .age-heading, .estado-heading, .nacionalidad-heading {
+    align-self: center
+}
+
+.estado-checkbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.selector select {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    width: 200px;
+    background-color: rgba(250, 250, 135, 1);
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: rgba(250, 250, 135, 1);
+    font-family: 'Encode Sans Expanded', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 45px 45px 45px 45px;
+    -moz-border-radius: 45px 45px 45px 45px;
+    -webkit-border-radius: 45px 45px 45px 45px;
+    border: 0px solid #000000;
+}
+
+button:hover {
+    background-color: rgba(200, 211, 114, 1);
+}
+
+button:active {
+    background-color: rgba(200, 211, 114, 1);
+    box-shadow: 0 5px rgba(194, 0, 91, 1);
+    transform: translateY(4px);
+}
