@@ -5,7 +5,8 @@ Validarlo en el submit
 Nombre —> no puede estar vacío
 Edad ——> debe ser entre 18 y 120 
 Seleccionar estado civil —> no puede estar vacío 
-Seleccionar nacionalidad (select, desplegado de opciones) —> no puede estar vacío 
+Seleccionar nacionalidad 
+(select, desplegado de opciones) —> no puede estar vacío 
 
 
 Una vez enviados los datos, 
