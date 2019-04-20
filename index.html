@@ -5,29 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Un mundo sin tacc
-    </title>
+    <link rel="stylesheet" href="invitacion-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded" rel="stylesheet">
+    <title>Un mundo sin tacc</title>
 </head>
 
 <body>
     <h1>¡Un mundo sin tacc!</h1>
     <form action="index.html" method="get">
         <div class="name">
-            Escribí tu nombre
-            <input type="text" name="nombre">
+            <div class="name-heading">
+                Escribí tu nombre
+            </div>
+            <div class="name-input">
+                <input type="text" name="nombre">
+            </div>
         </div>
         <div class="age">
-            Ingresá tu edad
-            <input type="number" name="edad">
+            <div class="age-heading">
+                Poné tu edad
+            </div>
+            <div class="age-input">
+                <input type="number" name="edad">
+            </div>
         </div>
-        <div class="estado-civil"> ¿Cuál es tu estado civil?
-            <br>
-            <input type="checkbox" name="estado-civil" id="Soltere" value="Soltere">Soltere
-            <input type="checkbox" name="estado-civil" id="Casade" value="Casade">Casade
-            <input type="checkbox" name="estado-civil" id="Poliamor" value="Poliamor">Poliamor
-            <input type="checkbox" name="estado-civil" id="Poliamor" value="Poliamor">Qué te importa
+        <div class="estado-civil">
+            <div class="estado-heading">
+                ¿Cuál es tu estado civil?
+            </div>
+            <div class="estado-checkbox">
+                <input type="checkbox" name="estado-civil" id="Soltere" value="Soltere">Soltere
+                <input type="checkbox" name="estado-civil" id="Casade" value="Casade">Casade
+                <input type="checkbox" name="estado-civil" id="Poliamor" value="Poliamor">Poliamor
+                <input type="checkbox" name="estado-civil" id="no-contesta" value="no-contesta">Qué te importa
+            </div>
         </div>
         <div class="selector">
+            <div class="nacionalidad-heading">
+                ¿Tu nacionalidad?
+            </div class="nacionalidad-select">
             <select name="nacionalidad" id="nacionalidad">
                 <option value="Argentina">Argentina</option>
                 <option value="Urugaya">Urugaya</option>
@@ -37,12 +53,8 @@
             </select>
         </div>
         <button type="submit">¡Part of your world!</button>
-
-
-
     </form>
-
-    <script src="dom.js"></script>
+    <script src="invitacion-dom.js"></script>
 </body>
 
 </html>
