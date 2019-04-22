@@ -19,6 +19,7 @@ formulario.onsubmit = function validacion(e) {
     if (nombre.length === 0) {
         var nuevoDiv = document.createElement('div');
         nuevoDiv.textContent = 'Las puertas no se abren a campos vacíos. Completá el nombre';
+        nuevoDiv.setAttribute('class', 'error');
         nuevoDiv.setAttribute('id', 'error-de-nombre');
         todoElDoc.appendChild(nuevoDiv);
     };
@@ -26,16 +27,19 @@ formulario.onsubmit = function validacion(e) {
     if (edad.length === 0) {
         var nuevoDiv = document.createElement('div');
         nuevoDiv.textContent = 'Las puertas no se abren a campos vacíos. Completá la edad';
+        nuevoDiv.setAttribute('class', 'error');
         nuevoDiv.setAttribute('id', 'error-de-edad');
         todoElDoc.appendChild(nuevoDiv);
     } else if (edad < 18) {
         var nuevoDiv = document.createElement('div');
         nuevoDiv.textContent = 'No me gustan les críes. ¡Suerte la próxima!';
+        nuevoDiv.setAttribute('class', 'error');
         nuevoDiv.setAttribute('id', 'error-de-edad')
         todoElDoc.appendChild(nuevoDiv);
     } else if (edad > 120) {
         var nuevoDiv = document.createElement('div');
         nuevoDiv.textContent = 'I\'m young and I like to be young... ';
+        nuevoDiv.setAttribute('class', 'error');
         nuevoDiv.setAttribute('id', 'error-de-edad')
         todoElDoc.appendChild(nuevoDiv);
     };
@@ -53,6 +57,7 @@ formulario.onsubmit = function validacion(e) {
     if (!estado) {
         var nuevoDiv = document.createElement('div');
         nuevoDiv.textContent = 'Contestá, no seas chote';
+        nuevoDiv.setAttribute('class', 'error');
         nuevoDiv.setAttribute('id', 'error-de-estado-civil')
         todoElDoc.appendChild(nuevoDiv);
     }
@@ -63,7 +68,7 @@ formulario.onsubmit = function validacion(e) {
         var categoriaArray = ['Nombre: ', 'Edad: ', 'Estado civil: ', 'Nacionalidad: ']
         divFichaInvitade = document.createElement('div');
         divFichaInvitade.setAttribute('class', 'ficha-de-invitade');
-        divFichaInvitade.textContent = 'Invitado';
+        divFichaInvitade.textContent = 'Tierraplanista';
         todoElDoc.appendChild(divFichaInvitade);
         function sumarDiv(divFicha) {
             for (let index = 0; index < fichaArray.length; index++) {
@@ -82,5 +87,6 @@ formulario.onsubmit = function validacion(e) {
 
     }
 //no funciona la nacionalidad
+//cómo borrar cada invitación
 }
 
